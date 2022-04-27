@@ -1,0 +1,16 @@
+<header>
+  <nav>
+    <div class="logo">
+      <a [routerLink]="['/']"><img src="../../assets/media/icons/rxjs.svg" alt="" width="32"> </a>
+    </div>
+    <div class="nav-items">
+      <a [routerLink]="['/creation-observable']" routerLinkActive="active">Create Observable</a>
+      <a [routerLink]="['/pipe-operators']" routerLinkActive="active">Pipe Operators</a>
+    </div>
+
+  </nav>
+</header>
+
+<main>
+  <router-outlet></router-outlet>
+</main>

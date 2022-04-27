@@ -1,0 +1,61 @@
+//varriables
+$header-bg:#8886881a;
+$nav-item:#5d2f88;
+$nav-item-active:#de1e85;
+
+header {
+  width: 1240px;
+  margin: 20px auto;
+  background-color: $header-bg;
+  padding: 10px;
+  border-radius: 3px;
+
+  nav {
+
+    display: flex;
+    align-items: center;
+
+    .logo {
+      cursor: pointer;
+      margin-left: 5px;
+    }
+
+    .nav-items {
+
+      display: flex;
+      margin-left: 20px;
+
+      a {
+        padding: 0px 5px;
+        position: relative;
+        margin: 5px;
+        color: $nav-item;
+
+        &:not(:last-child) {
+          &::before {
+            position: absolute;
+            content: "";
+            right: -5px;
+            width: 1px;
+            height: 20px;
+            background-color: #c7c6c6;
+          }
+        }
+      }
+
+      .active {
+        font-weight: 500;
+        color: $nav-item-active;
+      }
+
+    }
+
+  }
+
+}
+
+main {
+  width: 1240px;
+  margin: 20px auto;
+  padding: 10px;
+}
